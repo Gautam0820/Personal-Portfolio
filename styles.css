@@ -1,0 +1,83 @@
+.skills {
+    background: linear-gradient(135deg, #0073e6 0%, #005bb5 100%);
+    color: white;
+  }
+  
+  .skills h2 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+  }
+  
+  .skills-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skills-item {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    background: white;
+    color: #0073e6;
+    border-radius: 5px;
+    font-size: 1.5em;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+  }
+  
+  .skills-item:hover {
+    transform: scale(1.1);
+    background-color: #005bb5;
+    color: white;
+  }
+  
+  .skills-item:nth-child(odd) {
+    animation-delay: 0.2s;
+  }
+  
+  .skills-item:nth-child(even) {
+    animation-delay: 0.4s;
+  }
+  
+  /* Styles for the navbar (.nav) */
+  
+  .nav {
+    background-color: #333;
+    /* border: 2px solid #444;  You can uncomment this line if you want the border */
+    width: 100%;
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .nav .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav .nav-item {
+    margin: 0 20px;
+  }
+  
+  .nav .nav-item a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+  }
+  
+  .nav .nav-item a:hover {
+    text-decoration: underline;
+  }

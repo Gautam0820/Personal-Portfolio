@@ -1,0 +1,426 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Container Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #f4f4f4 0%, #0073e6 100%);
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* General Section Styling */
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.home, .about, .skills, .projects, .contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  animation-delay: 0.2s;
+}
+
+.about {
+  animation-delay: 0.4s;
+}
+
+.skills {
+  animation-delay: 0.6s;
+}
+
+.projects {
+  animation-delay: 0.8s;
+}
+
+.contact {
+  animation-delay: 1s;
+}
+
+/* Sticky Navigation Bar */
+/* nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 10px;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #0073e6;
+} */
+
+/* Header Styling */
+.home {
+  background: linear-gradient(135deg, #0073e6, #005bb5);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+  color: white;
+  text-align: center;
+  
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home h1 {
+  font-size: 5em;
+  margin-bottom: 30px;
+  animation: slideInFromLeft 1s ease forwards;
+}
+
+.home p {
+  font-size: 2.5em;
+  margin-top: 30px;
+  animation: slideInFromRight 1s ease forwards;
+}
+.home {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+
+
+/* About Section Styling */
+.about {
+  background-color: #fff;
+  color: #333;
+}
+
+.about h2 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.5em;
+  max-width: 800px;
+  margin: 20px auto;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Skills Section Styling */
+/* .skills {
+  background: linear-gradient(135deg, #0073e6 0%, #005bb5 100%);
+  color: white;
+}
+
+.skills h2 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills ul li {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  background: white;
+  color: #0073e6;
+  border-radius: 5px;
+  font-size: 1.5em;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.skills ul li:hover {
+  transform: scale(1.1);
+  background-color: #005bb5;
+  color: white;
+}
+
+.skills ul li:nth-child(odd) {
+  animation-delay: 0.2s;
+}
+
+.skills ul li:nth-child(even) {
+  animation-delay: 0.4s;
+}
+
+/* Styles for the navbar (.nav) */
+
+/* .nav {
+  background-color: #333; */
+  /* border: 2px solid #444; */
+  /* width: 100%;
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.nav.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav.nav-items {
+  margin: 0 20px;
+}
+
+.nav.nav-items a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+.nav.nav-items a:hover {
+  text-decoration: none;
+}
+  
+   .home, .about, .contact {
+    padding: 20px;
+  }  
+ */
+
+/* Projects Section Styling */
+.projects {
+  background: linear-gradient(135deg, #f4f4f4 0%, #d1d1d1 100%);
+}
+
+.projects h2 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.projects .project {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.projects .project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.projects .project:nth-child(odd) {
+  animation: slideInFromLeft 0.5s ease forwards;
+}
+
+.projects .project:nth-child(even) {
+  animation: slideInFromRight 0.5s ease forwards;
+}
+
+.projects .project h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #0073e6;
+}
+
+.projects .project p {
+  font-size: 1.5em;
+  color: black;
+}
+
+/* Contact Section Styling */
+.contact {
+  background-color: #0073e6;
+}
+
+.contact h2 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.5em;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.contact input:focus, .contact textarea:focus {
+  box-shadow: 0 0 5px rgba(0, 115, 230, 0.8);
+  border-color: #0073e6;
+}
+
+.contact button {
+  padding: 15px;
+  background-color: #e63600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #005bb5;
+  transform: scale(1.05);
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #282c34;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 2.5em;
+  }
+
+  .home p {
+    font-size: 1em;
+  }
+
+  .about h2, .skills h2, .projects h2, .contact h2 {
+    font-size: 2em;
+  }
+
+  .skills ul {
+    flex-direction: column;
+  }
+
+  .skills ul li {
+    margin: 10px auto;
+  }
+}
+
+
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.social-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
